@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    @font-face {
+        font-family: "Inter-Bold";
+        src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf") format("woff2-variations");
+        font-weight: 125 950;
+        font-stretch: 75% 125%;
+        font-style: normal;
+    }
+
+}

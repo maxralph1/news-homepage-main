@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+    <link href="../dist/output.css" rel="stylesheet">
+    
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>
+  <body class="px-3 md:px-24 py-0 max-w-screen-xl mx-auto">
+    <header class="flex flex-row justify-between mt-6">
+      <h1 class="#">
+        <img src="../assets/images/logo.svg" alt="W" class="w-12">
+      </h1>
+      <nav class="hidden">
+        <ul>
+          <li>Home</li>
+          <li>New</li>
+          <li>Popular</li>
+          <li>Trending</li>
+          <li>Categories</li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="mt-9">
+      <div class="md:grid md:grid-cols-3 gap-4">
+        <section class="flex flex-col-reverse justify-between gap-4 col-span-2">
+          <div class="flex flex-col md:flex-row grow">
+            <h2 class="text-3xl font-bold basis-2/4">The Bright Future of Web 3.0?</h2>
+            <div class="flex flex-col basis-2/4">
+              <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+              <p class="mt-5">
+                <a href="#" class="py-3 px-7 bg-red-500 hover:bg-black text-white uppercase text-xs tracking-[0.4em] font-medium">Read more</a>
+              </p>
+              
+            </div>
+          </div>
+
+          <div class="grow">
+            <picture>
+              <source media="(max-width: 799px)" srcset="../assets/images/image-web-3-mobile.jpg" />
+              <source media="(min-width: 800px)" srcset="../assets/images/image-web-3-desktop.jpg" />
+              <img src="../assets/images/image-web-3-desktop.jpg" alt="Chris standing up holding his daughter Elva" />
+            </picture>
+          </div>
+        </section>
+
+        <section class="bg-black p-4 mt-16 md:mt-0">
+          <h3 class="text-yellow-400 text-3xl font-semibold">New</h3>
+          <ul class="flex flex-col gap-3 mt-5 text-white">
+            <li class="text-base/7">
+              <h4 class="font-bold">Hydrogen VS Electric Cars</h4>
+              <p class="font-light text-base">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </li>
+            <hr class="mx-auto w-full bg-slate-800 my-4" />
+            <li>
+              <h4 class="font-bold">The Downsides of AI Artistry</h4>
+              <p class="font-light">
+                What are the possible adverse effects of on-demand AI image generation?
+              </p>
+            </li>
+            <hr class="mx-auto w-full bg-slate-800 my-4" />
+            <li>
+              <h4 class="font-bold">Is VC Funding Drying Up?</h4>
+              <p class="font-light">
+                Private funding by VC firms is down 50% YOY. We take a look at what that means.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="mt-12 flex">
+        <h3 class="hidden">Articles</h3>
+        <ul class="flex flex-col md:flex-row md:justify-between gap-6">
+          <li class="flex gap-5">
+            <img src="../assets/images/image-retro-pcs.jpg" alt="" class="w-1/4">
+            <div class="leading-7">
+              <span class="font-semibold text-3xl text-slate-300">01</span>
+              <h4 class="font-bold hover:text-orange-500 hover:cursor-pointer">Reviving Retro PCs</h4>
+              <p class="font-light text-sm">What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </li>
+          <li class="flex gap-5">
+            <img src="../assets/images/image-retro-pcs.jpg" alt="" class="w-1/4">
+            <div class="leading-7">
+              <span class="font-semibold text-3xl text-slate-300">02</span>
+              <h4 class="font-bold hover:text-orange-500 hover:cursor-pointer">Top 10 Laptops of 2022</h4>
+              <p class="font-light text-sm">Our best picks for various needs and budgets.</p>
+            </div>
+          </li>
+          <li class="flex gap-5">
+            <img src="../assets/images/image-retro-pcs.jpg" alt="" class="w-1/4">
+            <div class="leading-7">
+              <span class="font-semibold text-3xl text-slate-300">03</span>
+              <h4 class="font-bold hover:text-orange-500 hover:cursor-pointer">The Growth of Gaming</h4>
+              <p class="font-light text-sm">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
+
+<!-- 
+
+
+  Home
+  New
+  Popular
+  Trending
+  Categories
+
+  The Bright Future of Web 3.0?
+
+  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  But is it really fulfilling its promise?
+
+  Read more
+
+  New 
+
+  Hydrogen VS Electric Cars
+  Will hydrogen-fueled cars ever catch up to EVs?
+
+  The Downsides of AI Artistry
+  What are the possible adverse effects of on-demand AI image generation?
+
+  Is VC Funding Drying Up?
+  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+
+  01
+  Reviving Retro PCs
+  What happens when old PCs are given modern upgrades?
+
+  02
+  Top 10 Laptops of 2022
+  Our best picks for various needs and budgets.
+
+  03
+  The Growth of Gaming
+  How the pandemic has sparked fresh opportunities. -->
