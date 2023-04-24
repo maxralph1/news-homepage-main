@@ -6,6 +6,7 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
     <link href="../dist/output.css" rel="stylesheet">
+    <script src="./js/script.js" defer></script>
     
     <title>Frontend Mentor | News homepage</title>
 
@@ -15,27 +16,29 @@
       .attribution a { color: hsl(228, 45%, 44%); }
     </style>
   </head>
-  <body class="px-3 md:px-24 xl:px-52 py-0">
-    <header class="flex flex-row justify-between mt-6">
+  <body class="px-3 md:px-24 xl:px-52 py-10">
+    <header class="flex flex-row justify-between">
       <h1 class="#">
         <img src="../assets/images/logo.svg" alt="W" class="w-12">
       </h1>
-      <nav class="">
-        <ul class="hidden md:flex md:gap-7">
-          <li>Home</li>
-          <li>New</li>
-          <li>Popular</li>
-          <li>Trending</li>
-          <li>Categories</li>
+      <nav class="hidden md:flex md:justify-end fixed md:static top-0 right-0 w-3/4 bg-white">
+        <span href="#" class="md:hidden float-right hover:cursor-pointer pt-7" id="close"><img src="../assets/images/icon-menu-close.svg" alt=""></span>
+        <ul class="top-0 flex flex-col justify-end gap-6 md:flex md:flex-row md:gap-7 pt-24 md:pt-0 pb-96 md:pb-0 pl-6 min-h-full">
+          <li class="hover:text-orange-500 hover:cursor-pointer">Home</li>
+          <li class="hover:text-orange-500 hover:cursor-pointer">New</li>
+          <li class="hover:text-orange-500 hover:cursor-pointer">Popular</li>
+          <li class="hover:text-orange-500 hover:cursor-pointer">Trending</li>
+          <li class="hover:text-orange-500 hover:cursor-pointer">Categories</li>
         </ul>
       </nav>
+      <span href="#" class="md:hidden hover:cursor-pointer mt-2.5" id="menu"><img src="../assets/images/icon-menu.svg" alt=""></span>
     </header>
     
     <main class="mt-9">
       <div class="md:grid md:grid-cols-3 gap-5">
         <section class="grid gap-4 col-span-2">
-          <div class="row-start-2 flex flex-col md:flex-row">
-            <h2 class="text-3xl font-bold basis-2/4">The Bright Future of Web 3.0?</h2>
+          <div class="row-start-2 flex flex-col md:flex-row md:gap-9">
+            <h2 class="text-4xl font-bold basis-2/4">The Bright Future of Web 3.0?</h2>
             <div class="flex flex-col basis-2/4">
               <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
               <p class="mt-5">
@@ -54,7 +57,7 @@
           </div>
         </section>
 
-        <section class="bg-black p-4 mt-16 md:mt-0">
+        <section class="bg-black p-4 pt-5 pb-7 mt-16 md:mt-0">
           <h3 class="text-yellow-400 text-3xl font-semibold">New</h3>
           <ul class="flex flex-col gap-3 mt-5 text-white">
             <li class="text-base/7">
@@ -77,15 +80,16 @@
                 Private funding by VC firms is down 50% YOY. We take a look at what that means.
               </p>
             </li>
+            <!-- <hr class="mx-auto bg-slate-800 mt-4" /> -->
           </ul>
         </section>
       </div>
 
       <section class="mt-16 flex">
         <h3 class="hidden">Articles</h3>
-        <ul class="flex flex-col md:flex-row md:justify-between gap-6">
+        <ul class="flex flex-col lg:flex-row lg:justify-between gap-6">
           <li class="flex gap-5">
-            <img src="../assets/images/image-retro-pcs.jpg" alt="" class="w-1/4">
+            <img src="../assets/images/image-retro-pcs.jpg" alt="" class="w-1/4 object-cover">
             <div class="leading-7">
               <span class="font-semibold text-3xl text-slate-300">01</span>
               <h4 class="font-bold hover:text-orange-500 hover:cursor-pointer">Reviving Retro PCs</h4>
@@ -93,7 +97,7 @@
             </div>
           </li>
           <li class="flex gap-5">
-            <img src="../assets/images/image-retro-pcs.jpg" alt="" class="w-1/4">
+            <img src="../assets/images/image-retro-pcs.jpg" alt="" class="w-1/4 object-cover">
             <div class="leading-7">
               <span class="font-semibold text-3xl text-slate-300">02</span>
               <h4 class="font-bold hover:text-orange-500 hover:cursor-pointer">Top 10 Laptops of 2022</h4>
@@ -101,7 +105,7 @@
             </div>
           </li>
           <li class="flex gap-5">
-            <img src="../assets/images/image-retro-pcs.jpg" alt="" class="w-1/4">
+            <img src="../assets/images/image-retro-pcs.jpg" alt="" class="w-1/4 object-cover">
             <div class="leading-7">
               <span class="font-semibold text-3xl text-slate-300">03</span>
               <h4 class="font-bold hover:text-orange-500 hover:cursor-pointer">The Growth of Gaming</h4>
